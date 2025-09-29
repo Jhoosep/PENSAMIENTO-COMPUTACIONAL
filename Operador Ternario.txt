@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int e;
+    cout<<"Ingrese su edad "<<endl;
+    cin>>e;
+    e<18?cout<<"eres menor de edad":cout<<"eres mayor de edad";
+
+    return 0;
+}
