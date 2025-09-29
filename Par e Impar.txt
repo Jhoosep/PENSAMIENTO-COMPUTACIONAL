@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int e;
+    cout<<"Ingrese su digito "<<endl;
+    cin>>e;
+    (e%2)==0?cout<<"El nuemro es par":cout<<"El numero es impar";
+    return 0;
+}
