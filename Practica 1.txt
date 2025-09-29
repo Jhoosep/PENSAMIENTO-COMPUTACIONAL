@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main (){
+    bool examen,proyecto;
+    cout<<"fkjdsh"<<endl;
+    cin>>examen>>proyecto;
+    if (examen=proyecto){
+        cout<<"aprovado";
+    }else{
+        cout<<"deaprovado";
+    }
+    return 0;
+}
