@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int a ,b ,c;
+    cout <<"ingrese un numero"<<endl;
+    cin>> a ;
+    if (a<0){
+        a= a*(-1);
+    }else if (a>=10&&a<=99){
+        b = a/10;
+        c = a % 10;
+        cout<<"la suma es.  "<< b+c ;
+    }else {
+        cout <<" ingrese un numero de dos digitos"<<endl;
+    }
+    
+    return 0;
+}
