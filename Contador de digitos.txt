@@ -1,0 +1,13 @@
+# include <iostream>
+using namespace std;
+int main (){
+    int dig, i = 0;
+    int y = 128;
+    while (y > 0){
+        dig = y - ((y/10)*10);
+        y = y/10;
+        i = i +1;
+    }
+    cout <<"el numero de digitos " << i;
+    return 0;
+}
