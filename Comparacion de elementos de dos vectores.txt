@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int A[] = {2,2,3,4};
+    int B[4]={2,2,3,4};
+    int i;
+    int a=0;
+    for (i=0;i<4;i++)
+    {
+        if (A[i]==B[i])
+        {
+          a = a +1 ;
+        }
+    }
+    if (a==4)
+    {
+        cout << "Los vectores son iguales "<<endl ;
+    }else 
+    {
+        cout << "Los vectores son distintos"<< endl;
+    }
+    
+    return 0;
+}
