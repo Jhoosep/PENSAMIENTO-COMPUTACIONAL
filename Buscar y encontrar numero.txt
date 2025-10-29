@@ -1,0 +1,20 @@
+# include <iostream>
+using namespace std;
+int main ()
+{
+    int A[]={121,11,115,100};
+    int c,i;
+    int pos;
+    cout << "que numero quiere buscar "<<endl;
+    cin >> c;
+    for (i=0;i<4;i++)
+    {
+        if(A[i]==c)
+        {
+            pos = i+1;
+        }
+        
+    }
+    cout << "Buscar el numero "<< c<< endl ;
+    cout << "este en la posicion "<< pos<< endl;
+}
