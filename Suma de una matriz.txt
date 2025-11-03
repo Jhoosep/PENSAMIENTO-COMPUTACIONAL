@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int n;
+    cout << "Ingrese el tamaño "<<endl;
+    cin >>n;
+    int a =0;
+    int i,j;
+    int A[n][n];
+    
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            cin >> A[i][j];
+        }
+    }
+    
+    for (i=0;i<n;i++)
+    {
+        for (j=0;j<n;j++)
+        {
+            a = a + A[i][j];
+        }
+    }
+    
+    cout << "La suma de elementos es "<< a ;
+    
+    return 0;
+}
