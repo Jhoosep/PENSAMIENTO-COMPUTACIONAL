@@ -1,0 +1,165 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int A[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+    int B[3][6];
+    int C[3],D[3],E[3],F[3],G[3],H[3];
+    int i,j;
+    int m1=1,m2=1,m3=1,m4,n1=1,n2=1,n3=1,n4;
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<3;j++)
+        {
+            B[i][j]=A[i][j];
+        }
+    }
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<3;j++)
+        {
+            B[i][j+3]=A[i][j];
+        }
+    }
+    
+    
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<6;j++)
+        {
+            cout << B[i][j]<< " " ;
+        }
+        cout << endl;
+    }
+    
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<6;j++)
+        {
+            if ((j-i)==0)
+            {
+                C[i]=B[i][j];
+            }
+        }
+    }
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<6;j++)
+        {
+            if ((j-i)==1)
+            {
+                D[i]=B[i][j];
+            }
+        }
+    }
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<6;j++)
+        {
+            if ((j-i)==2)
+            {
+                E[i]=B[i][j];
+            }
+        }
+    }
+    cout << endl;
+    
+    for (j=0;j<3;j++)
+    {
+        cout << C[j]<< " ";
+    }
+    for (j=0;j<3;j++)
+    {
+        cout << D[j]<< " ";
+    }
+    for (j=0;j<3;j++)
+    {
+        cout << E[j]<< " ";
+    }
+    
+    for (i=0;i<3;i++);
+    {
+        m1=m1*(C[i]);
+    }
+    for (i=0;i<3;i++);
+    {
+        m2=m2*(C[i]);
+    }
+    for (i=0;i<3;i++);
+    {
+        m3=m3*(C[i]);
+    }
+    m4 = m1+m2+m3;
+    
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<6;j++)
+        {
+            if ((j+i)==2)
+            {
+                F[i]=B[i][j];
+            }
+        }
+    }
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<6;j++)
+        {
+            if ((j+i)==3)
+            {
+                G[i]=B[i][j];
+            }
+        }
+    }
+    
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<6;j++)
+        {
+            if ((j+i)==4)
+            {
+                H[i]=B[i][j];
+            }
+        }
+    }
+    cout << endl;
+    
+    for (j=0;j<3;j++)
+    {
+        cout << F[j]<< " ";
+    }
+    for (j=0;j<3;j++)
+    {
+        cout << G[j]<< " ";
+    }
+    for (j=0;j<3;j++)
+    {
+        cout << H[j]<< " ";
+    }
+    
+    for (i=0;i<3;i++);
+    {
+        n1=n1*(C[i]);
+    }
+    for (i=0;i<3;i++);
+    {
+        n2=n2*(C[i]);
+    }
+    for (i=0;i<3;i++);
+    {
+        n3=n3*(C[i]);
+    }
+    n4 = n1+n2+n3;
+    
+    
+    cout << endl;
+    cout << m4-n4;
+    
+    return 0;
