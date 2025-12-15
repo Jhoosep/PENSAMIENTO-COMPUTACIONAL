@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+struct texto
+    {
+        string nombre;
+        float costo;
+    };
+    int main ()
+    {
+    int i;
+    texto datos[2];
+    for (i=0;i<2;i++)
+    {
+        cout<< "Nombre del libro"<<endl;
+        cin >> datos[i].nombre;
+        cout<< "Costo del libro"<<endl;
+        cin >> datos[i].costo;
+        cout << endl;
+    }
+    int a=0;
+    for (i=0;i<2;i++)
+    {
+        a  = a + datos[i].costo;
+    }
+    cout<< "la costo total es; "<< a ;
+    return 0;
+    }
