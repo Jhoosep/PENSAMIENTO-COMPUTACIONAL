@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+struct texto
+    {
+        int codigo;
+        string nombre;
+        int nota;
+    };
+    int main ()
+    {
+    int i;
+    texto datos[2];
+    for (i=0;i<2;i++)
+    {
+        cout<< "Escriba el codigo"<<endl;
+        cin >> datos[i].codigo;
+        cout<< "Escriba el nombre"<<endl;
+        cin >> datos[i].nombre;
+        cout<< "Escriba el nota"<<endl;
+        cin >> datos[i].nota;
+    }
+    
+    for (i=0;i<2;i++)
+    {
+        cout << datos[i].codigo<<endl;
+        cout << datos[i].nombre<<endl;
+        cout << datos[i].nota<<endl;
+    }
+    return 0;
+    }
