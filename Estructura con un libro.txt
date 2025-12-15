@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+struct biblioteca
+    {
+        int codigo;
+        string nombre;
+        string editorial;
+        int año;
+    };
+int main ()
+{
+    biblioteca libro;
+    libro.codigo = 202001;
+    libro.nombre = "Programacion";
+    libro.editorial = "Lumbreras";
+    libro.año = 2030;
+    
+    cout << "Nombre del Libro:  " <<libro.nombre<< endl;
+    cout << "Codigo:  "<< libro.codigo<< endl;
+    cout << "Editorial:  " <<libro.editorial<< endl;
+    cout << "Año de publicacion:  " <<libro.año<< endl;
+    
+}
