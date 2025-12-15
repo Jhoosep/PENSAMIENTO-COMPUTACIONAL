@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+struct biblioteca
+    {
+        int codigo;
+        string nombre;
+        string editorial;
+        int año;
+    };
+    void salidalibros (biblioteca atributos)
+    {
+        cout << "Codigo:  "<< atributos.codigo<< endl;
+        cout << "Nombre del Libro:  " <<atributos.nombre<< endl;
+        cout << "Editorial:  " <<atributos.editorial<< endl;
+        cout << "Año de publicacion:  " <<atributos.año<< endl;
+    }
+int main ()
+{
+    biblioteca libro;
+    cout << "Ingrese los datos"<< endl;
+    cin>>libro.codigo;
+    cin>>libro.nombre;
+    cin>>libro.editorial;
+    cin>>libro.año;
+    
+    salidalibros(libro);
+    return 0;
+    
+}
